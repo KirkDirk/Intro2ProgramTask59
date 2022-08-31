@@ -51,3 +51,17 @@ Console.WriteLine($"Массив {rowArray}x{columnArray}, значения от
 PrintArray2Dim(someArray);
 int[] xyMinElSomeArray = FindMinElArray(someArray);
 Console.WriteLine(xyMinElSomeArray[0] + " " + xyMinElSomeArray[1]);
+
+int[,] newArray = int new[rowArray -1, columnArray -1];
+for (int i = 0; i < rowArray; i++)
+{
+    for (int j = 0; j < columnArray; i++)
+    {
+        if (i<>xyMinElSomeArray[0] || j<>xyMinElSomeArray [1])
+        {
+           newArray [i,j] = someArray[i,j];
+        }
+    }
+}
+Console.WriteLine("Массив с удаленными строкой и столбцом");
+PrintArray2Dim(newArray);
